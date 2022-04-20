@@ -8,6 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - adicionar_favoritos
 
 responses:
   utter_greet:
