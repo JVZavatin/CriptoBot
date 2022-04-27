@@ -1,103 +1,15 @@
 version: "3.1"
 
-nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-
 - intent: adicionar_favoritos
   examples: |
     - favoritar
     - adicionar aos favoritos
     - adicionar
+    - seguir
     - quero favoritar
     - quero adicionar aos favoritos
-
+    - quero seguir
+  
   intent: consultar_cotacao
   examples: |
     - favoritos
@@ -105,6 +17,8 @@ nlu:
     - cotação
     - cotações
     - preços
+    - valor
+    - valores
     - ver favoritos
     - ver ativos salvos
     - ver cotação
@@ -117,19 +31,24 @@ nlu:
     - ver meus cotações
     - ver meus preços
     - consultar favoritos
+    - consultar os favoritos
+    - consultar as moedas favoritas
     - consultar ativos salvos
     - consultar cotação
+    - consultar a cotação
     - consultar cotações
     - consultar preços
+    - consultar os preços
     - consultar meus favoritos
     - consultar meus ativos salvos
-    - consultar meus cotação
-    - consultar meus cotações
+    - consultar minhas cotações
     - consultar meus preços
     - mostrar favoritos
+    - mostrar os favoritos
     - mostrar ativos salvos
     - mostrar cotação
     - mostrar cotações
+    - mostrar as cotações
     - mostrar preços
     - mostrar meus favoritos
     - mostrar meus ativos salvos
@@ -140,16 +59,21 @@ nlu:
     - obter ativos salvos
     - obter cotação
     - obter cotações
+    - obter a cotação
+    - obter as cotações
     - obter preços
     - obter meus favoritos
     - obter meus ativos salvos
-    - obter meus cotação
-    - obter meus cotações
+    - obter minhas cotações
     - obter meus preços
+    - qual o valor delas hoje?
+    - qual o valor das minhas moedas favoritas?
+    - qual o valor das minhas moedas favoritadas?
 
 intent: introducao
   examples: |
     - olá
+    - ola
     - oi
     - oie
     - opa
@@ -159,3 +83,4 @@ intent: introducao
     - tudo bem?
     - tudo certo?
     - criptobot
+    
