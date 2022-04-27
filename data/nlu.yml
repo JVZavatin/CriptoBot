@@ -146,3 +146,16 @@ nlu:
     - obter meus cotação
     - obter meus cotações
     - obter meus preços
+
+intent: introducao
+  examples: |
+    - olá
+    - oi
+    - oie
+    - opa
+    - bom dia
+    - boa tarde
+    - boa noite
+    - tudo bem?
+    - tudo certo?
+    - criptobot

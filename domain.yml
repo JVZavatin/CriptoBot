@@ -10,6 +10,7 @@ intents:
   - bot_challenge
   - adicionar_favoritos
   - consultar_cotacao
+  - introducao
 
 responses:
   utter_greet:
