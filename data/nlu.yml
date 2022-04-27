@@ -97,3 +97,52 @@ nlu:
     - adicionar
     - quero favoritar
     - quero adicionar aos favoritos
+
+  intent: consultar_cotacao
+  examples: |
+    - favoritos
+    - ativos salvos
+    - cotação
+    - cotações
+    - preços
+    - ver favoritos
+    - ver ativos salvos
+    - ver cotação
+    - ver cotações
+    - ver preços
+    - ver meus favoritos
+    - ver meus ativos salvos
+    - ver meus ativos
+    - ver meus cotação
+    - ver meus cotações
+    - ver meus preços
+    - consultar favoritos
+    - consultar ativos salvos
+    - consultar cotação
+    - consultar cotações
+    - consultar preços
+    - consultar meus favoritos
+    - consultar meus ativos salvos
+    - consultar meus cotação
+    - consultar meus cotações
+    - consultar meus preços
+    - mostrar favoritos
+    - mostrar ativos salvos
+    - mostrar cotação
+    - mostrar cotações
+    - mostrar preços
+    - mostrar meus favoritos
+    - mostrar meus ativos salvos
+    - mostrar meus cotação
+    - mostrar meus cotações
+    - mostrar meus preços
+    - obter favoritos
+    - obter ativos salvos
+    - obter cotação
+    - obter cotações
+    - obter preços
+    - obter meus favoritos
+    - obter meus ativos salvos
+    - obter meus cotação
+    - obter meus cotações
+    - obter meus preços
