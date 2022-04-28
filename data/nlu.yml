@@ -9,6 +9,9 @@ version: "3.1"
     - quero favoritar
     - quero adicionar aos favoritos
     - quero seguir
+    - poderia adicionar as moedas
+    - gostaria de seguir
+    - desejo favoritar
   
   intent: consultar_cotacao
   examples: |
@@ -27,8 +30,8 @@ version: "3.1"
     - ver meus favoritos
     - ver meus ativos salvos
     - ver meus ativos
-    - ver meus cotação
-    - ver meus cotações
+    - ver minha cotação
+    - ver minhas cotações
     - ver meus preços
     - consultar favoritos
     - consultar os favoritos
@@ -62,13 +65,18 @@ version: "3.1"
     - obter a cotação
     - obter as cotações
     - obter preços
+    - obter meus preços
     - obter meus favoritos
     - obter meus ativos salvos
     - obter minhas cotações
     - obter meus preços
-    - qual o valor delas hoje?
-    - qual o valor das minhas moedas favoritas?
-    - qual o valor das minhas moedas favoritadas?
+    - qual o valor delas hoje
+    - qual o valor das minhas moedas favoritas
+    - qual o valor das minhas moedas favoritadas
+    - eu gostaria de ver as moedas que eu favoritei
+    - quero a cotação das minhas moedas favoritas
+    - preciso da cotação das minhas moedas
+    - preciso da cotação da minha moeda favorita
 
 intent: introducao
   examples: |
@@ -83,4 +91,7 @@ intent: introducao
     - tudo bem?
     - tudo certo?
     - criptobot
+    - eae, meu chapa
+    - eae
+    - salve
     
