@@ -2,45 +2,51 @@ version: "3.1"
 
 - intent: adicionar_favoritos
   examples: |
-    - favoritar
-    - adicionar aos favoritos
-    - adicionar
-    - seguir
+    - eu desejo favoritar cripto moedas 
     - quero favoritar
+    - desejo adicionar minhas preferidas
+    - eu desejo favoritar um cripto-moeda 
+    - preciso adicionar aos favoritos
+    - eu quero adicionar moedas aos meus favoritos
+    - seguir umas cripto ativos
+    - quero favoritar minhas criptomoedas
     - quero adicionar aos favoritos
-    - quero seguir
+    - quero seguir cripto ativo
+    - quero seguir minhas moedas preferidas
+    - desejo favoritar minhas criptos preferidas
     - poderia adicionar as moedas
     - gostaria de seguir
-    - desejo favoritar
+    - desejo favoritar algumas moedas
+    -
   
-  intent: consultar_cotacao
+- intent: consultar_cotacao
   examples: |
     - favoritos
     - ativos salvos
     - cotação
     - cotações
     - preços
-    - valor
+    - quero o valor da moeda favorita
     - valores
-    - ver favoritos
+    - eu quero ver favoritos
     - ver ativos salvos
-    - ver cotação
+    - ver cotação dos ativos
     - ver cotações
-    - ver preços
-    - ver meus favoritos
-    - ver meus ativos salvos
-    - ver meus ativos
-    - ver minha cotação
-    - ver minhas cotações
-    - ver meus preços
+    - queria ver preços de criptomoedas
+    - eu queria ver meus favoritos
+    - eu desejo ver meus ativos salvos
+    - eu quero ver meus ativos
+    - eu quero ver minha cotação de moedas
+    - quero ver minhas cotações
+    - quero ver meus preços
     - consultar favoritos
     - consultar os favoritos
     - consultar as moedas favoritas
     - consultar ativos salvos
     - consultar cotação
-    - consultar a cotação
+    - consultar a cotação das minhas cripto moedas
     - consultar cotações
-    - consultar preços
+    - consultar preços das criptos
     - consultar os preços
     - consultar meus favoritos
     - consultar meus ativos salvos
@@ -49,10 +55,10 @@ version: "3.1"
     - mostrar favoritos
     - mostrar os favoritos
     - mostrar ativos salvos
-    - mostrar cotação
+    - mostrar cotação das moedas
     - mostrar cotações
     - mostrar as cotações
-    - mostrar preços
+    - mostrar preços das minhas cripto-moedas
     - mostrar meus favoritos
     - mostrar meus ativos salvos
     - mostrar meus cotação
@@ -60,12 +66,12 @@ version: "3.1"
     - mostrar meus preços
     - obter favoritos
     - obter ativos salvos
-    - obter cotação
+    - obter cotação das minhas preferidas
     - obter cotações
     - obter a cotação
     - obter as cotações
-    - obter preços
-    - obter meus preços
+    - eu quero obter preços das minhas moedas
+    - eu queria obter meus preços
     - obter meus favoritos
     - obter meus ativos salvos
     - obter minhas cotações
@@ -78,7 +84,7 @@ version: "3.1"
     - preciso da cotação das minhas moedas
     - preciso da cotação da minha moeda favorita
 
-intent: introducao
+- intent: introducao
   examples: |
     - olá
     - ola
@@ -95,3 +101,66 @@ intent: introducao
     - eae
     - salve
     
+ - synonym: moeda
+   examples: |
+    - cripto
+    - criptos
+    - cripto ativo
+    - criptomoeda
+    - criptomoedas
+    - cripto moeda
+    - cripto moedas
+    - cripto-moeda
+    - cripto-moedas
+    - criptocoin
+    - cripto-coin
+    - cripto coin
+    - criptocoins
+    - cripto-coins
+    - cripto coins
+    
+- synonym: bitcoin
+   examples: |
+    - bit coin
+    - btc
+    - xbt
+    
+- synonym: ethereum
+   examples: |
+    - Ethers
+    - etherium
+    - eth
+    - Ether
+    
+- synonym: dogecoin
+   examples: |
+    - doge coin
+    - doge
+    - doges
+    - dogecoins
+    
+- synonym: luaswap
+   examples: |
+    - lua
+    - luacoin
+    
+- synonym: ripple
+   examples: |
+    - xrp
+    
+- synonym: litecoin
+   examples: |
+    - ltc
+    
+- synonym: cardano
+   examples: |
+    - ada
+    - carda
+  
+- synonym: binance
+   examples: |
+    - bnb
+  
+- synonym: binance
+   examples: |
+    - bnb
