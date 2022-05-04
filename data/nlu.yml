@@ -1,5 +1,6 @@
 version: "3.1"
 
+nlu:
 - intent: adicionar_favoritos
   examples: |
     - eu desejo favoritar cripto moedas 
@@ -17,7 +18,6 @@ version: "3.1"
     - poderia adicionar as moedas
     - gostaria de seguir
     - desejo favoritar algumas moedas
-    -
   
 - intent: consultar_cotacao
   examples: |
@@ -101,66 +101,74 @@ version: "3.1"
     - eae
     - salve
     
- - synonym: moeda
-   examples: |
+- synonym: moeda
+  examples: |
     - cripto
-    - criptos
     - cripto ativo
     - criptomoeda
-    - criptomoedas
     - cripto moeda
-    - cripto moedas
     - cripto-moeda
-    - cripto-moedas
     - criptocoin
     - cripto-coin
     - cripto coin
+
+- synonym: moedas
+  examples: |
+    - criptos
+    - cripto ativos
+    - criptomoedas
+    - cripto moedas
+    - cripto-moedas
     - criptocoins
     - cripto-coins
     - cripto coins
     
 - synonym: bitcoin
-   examples: |
+  examples: |
     - bit coin
     - btc
     - xbt
     
 - synonym: ethereum
-   examples: |
+  examples: |
     - Ethers
     - etherium
     - eth
     - Ether
     
 - synonym: dogecoin
-   examples: |
+  examples: |
     - doge coin
     - doge
     - doges
     - dogecoins
     
 - synonym: luaswap
-   examples: |
+  examples: |
     - lua
     - luacoin
     
 - synonym: ripple
-   examples: |
+  examples: |
     - xrp
     
 - synonym: litecoin
-   examples: |
+  examples: |
     - ltc
     
 - synonym: cardano
-   examples: |
+  examples: |
     - ada
     - carda
   
 - synonym: binance
-   examples: |
+  examples: |
     - bnb
   
 - synonym: binance
-   examples: |
+  examples: |
     - bnb
+
+- synonym: smooth love potion
+  examples: |
+    - slp
