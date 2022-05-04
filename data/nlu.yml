@@ -17,7 +17,6 @@ version: "3.1"
     - poderia adicionar as moedas
     - gostaria de seguir
     - desejo favoritar algumas moedas
-    -
   
 - intent: consultar_cotacao
   examples: |
@@ -118,6 +117,17 @@ version: "3.1"
     - criptocoins
     - cripto-coins
     - cripto coins
+
+ - synonym: moedas
+   examples: |
+    - criptos
+    - cripto ativos
+    - criptomoedas
+    - cripto moedas
+    - cripto-moedas
+    - criptocoins
+    - cripto-coins
+    - cripto coins
     
 - synonym: bitcoin
    examples: |
@@ -164,3 +174,7 @@ version: "3.1"
 - synonym: binance
    examples: |
     - bnb
+
+- synonym: smooth love potion
+   examples: |
+    - slp
