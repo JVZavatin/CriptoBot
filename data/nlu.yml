@@ -101,6 +101,38 @@ nlu:
     - eae
     - salve
     
+- intent: perguntar_significado
+  examples: |
+    - o que significa [trade] (termo_tecnico)
+    - o que é [ATH] (termo_tecnico)
+    - quero saber o que significa [Baleia] (termo_tecnico)
+    - o significado de [Bid] (termo_tecnico)
+    - não entendi [Blockchain] (termo_tecnico)
+    - me diga o que é [Day Trader] (termo_tecnico)
+    
+- intent: afirmar
+  examples: |
+    - sim
+    - s
+    - isso
+    - com certeza
+    - certamente
+    - opa
+    - agora
+    - prá já
+    - aham
+    - yep
+    
+- intent: negar
+  examples: |
+    - não
+    - n
+    - nunca
+    - necas
+    - negativo
+    - negado
+    - nop
+    
 - synonym: moeda
   examples: |
     - cripto
