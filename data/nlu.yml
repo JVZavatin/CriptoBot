@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: adicionar_favoritos
   examples: |
@@ -18,7 +17,7 @@ nlu:
     - poderia adicionar as moedas
     - gostaria de seguir
     - desejo favoritar algumas moedas
-  
+    - adicionar aos favoritos
 - intent: consultar_cotacao
   examples: |
     - favoritos
@@ -83,7 +82,6 @@ nlu:
     - quero a cotação das minhas moedas favoritas
     - preciso da cotação das minhas moedas
     - preciso da cotação da minha moeda favorita
-
 - intent: introducao
   examples: |
     - olá
@@ -100,7 +98,7 @@ nlu:
     - eae, meu chapa
     - eae
     - salve
-    
+    - Ola
 - intent: perguntar_significado
   examples: |
     - o que significa [trade] (termo_tecnico)
@@ -109,7 +107,6 @@ nlu:
     - o significado de [Bid] (termo_tecnico)
     - não entendi [Blockchain] (termo_tecnico)
     - me diga o que é [Day Trader] (termo_tecnico)
-    
 - intent: afirmar
   examples: |
     - sim
@@ -122,7 +119,6 @@ nlu:
     - prá já
     - aham
     - yep
-    
 - intent: negar
   examples: |
     - não
@@ -132,7 +128,6 @@ nlu:
     - negativo
     - negado
     - nop
-    
 - synonym: moeda
   examples: |
     - cripto
@@ -143,7 +138,6 @@ nlu:
     - criptocoin
     - cripto-coin
     - cripto coin
-
 - synonym: moedas
   examples: |
     - criptos
@@ -154,53 +148,40 @@ nlu:
     - criptocoins
     - cripto-coins
     - cripto coins
-    
 - synonym: bitcoin
   examples: |
     - bit coin
     - btc
     - xbt
-    
 - synonym: ethereum
   examples: |
     - Ethers
     - etherium
     - eth
     - Ether
-    
 - synonym: dogecoin
   examples: |
     - doge coin
     - doge
     - doges
     - dogecoins
-    
 - synonym: luaswap
   examples: |
     - lua
     - luacoin
-    
 - synonym: ripple
   examples: |
     - xrp
-    
 - synonym: litecoin
   examples: |
     - ltc
-    
 - synonym: cardano
   examples: |
     - ada
     - carda
-  
 - synonym: binance
   examples: |
     - bnb
-  
-- synonym: binance
-  examples: |
-    - bnb
-
 - synonym: smooth love potion
   examples: |
     - slp
