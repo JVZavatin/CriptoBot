@@ -18,6 +18,8 @@ nlu:
     - gostaria de seguir
     - desejo favoritar algumas moedas
     - adicionar aos favoritos
+    - favoritar moeda
+    - adicionar moeda
 - intent: consultar_cotacao
   examples: |
     - favoritos
@@ -128,6 +130,15 @@ nlu:
     - negativo
     - negado
     - nop
+- intent: criptomoeda
+  examples: |
+    - bitcoin
+    - cardano
+    - litecoin
+    - ripple
+    - luaswap
+    - dogecoin
+    - ethereum
 - synonym: moeda
   examples: |
     - cripto

@@ -3,6 +3,7 @@ intents:
 - adicionar_favoritos
 - afirmar
 - consultar_cotacao
+- criptomoeda
 - introducao
 - negar
 - perguntar_significado
@@ -10,15 +11,27 @@ entities:
 - moeda
 - moedas
 - termo_tecnico
+slots:
+  criptomoeda_nome:
+    type: text
+    mappings:
+    - type: from_text
 responses:
   utter_introducao:
   - text: Olá, sou o Criptobot, estou aqui para te ajudar com o universo das criptomoedas, se você quiser, posso favoritar seus criptos, mostrar a cotação de suas moedas favoritas e te ajudar com termos do mercado cripto que você ainda não conhece. O que deseja fazer?
   utter_adicionar_favoritos:
-  - text: Hey! How are you?
+  - text: Digite uma moeda que você deseja favoritar
   utter_consultar_cotacao:
-  - text: Hey! How are you?
+  - text: A cotação de sua moedas
+  utter_moeda_adicionada:
+  - text: Adicionamos {criptomoeda_nome} aos seus favoritos, deseja favoritar outra?
+  utter_finalizar:
+  - text: Muito bem, qualquer coisa é só me dizer.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
+- utter_adicionar_favoritos
+- utter_finalizar
 - utter_introducao
+- utter_moeda_adicionada

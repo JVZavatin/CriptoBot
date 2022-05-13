@@ -10,5 +10,18 @@ stories:
 - story: interactive_story_1
   steps:
   - intent: introducao
+  - slot_was_set:
+    - criptomoeda_nome: ola
   - action: utter_introducao
   - intent: adicionar_favoritos
+  - slot_was_set:
+    - criptomoeda_nome: adicionar moeda
+  - action: utter_adicionar_favoritos
+  - intent: criptomoeda
+  - slot_was_set:
+    - criptomoeda_nome: bitcoin
+  - action: utter_moeda_adicionada
+  - intent: negar
+  - slot_was_set:
+    - criptomoeda_nome: não
+  - action: utter_finalizar
