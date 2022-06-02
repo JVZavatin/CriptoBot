@@ -20,6 +20,7 @@ nlu:
     - adicionar aos favoritos
     - favoritar moedas
     - adicionar moeda
+    - favoritar
 - intent: consultar_cotacao
   examples: |
     - favoritos
@@ -84,6 +85,7 @@ nlu:
     - quero a cotação das minhas moedas favoritas
     - preciso da cotação das minhas moedas
     - preciso da cotação da minha moeda favorita
+    - ver cotação
 - intent: introducao
   examples: |
     - olá
@@ -109,6 +111,17 @@ nlu:
     - o significado de [Bid] (termo_tecnico)
     - não entendi [Blockchain] (termo_tecnico)
     - me diga o que é [Day Trader] (termo_tecnico)
+    - nft
+- intent: consultar_termos
+  examples: |
+    - ver termos
+    - ver significado
+    - termos tecnicos
+    - termos
+    - significado
+    - consultar termos
+    - consultar significado
+    - ver termo
 - intent: afirmar
   examples: |
     - sim
@@ -139,6 +152,9 @@ nlu:
     - luaswap
     - dogecoin
     - ethereum
+    - BTC
+    - ETH
+    - ADA
 - lookup: moedas
   examples: |
     - bitcoin

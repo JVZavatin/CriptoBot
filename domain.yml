@@ -1,13 +1,13 @@
 version: '3.1'
 intents:
-  - adicionar_favoritos
-  - afirmar
-  - consultar_cotacao
-  - criptomoeda
-  - introducao
-  - negar
-  - perguntar_significado
-
+- adicionar_favoritos
+- afirmar
+- consultar_cotacao
+- consultar_termos
+- criptomoeda
+- introducao
+- negar
+- perguntar_significado
 entities:
   - moedas
   - termo_tecnico
@@ -31,12 +31,18 @@ responses:
   - text: Muito bem, qualquer coisa é só me dizer.
   utter_consultar_cotacao:
   - text: A cotação de suas moedas são as seguintes, \n Bitcoin R$144.285, \n Ethereum R$9.521. 
+  utter_consultar_termos:
+  - text: Digite o termo que deseja pesquisar
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
-  - utter_adicionar_favoritos
-  - utter_finalizar
-  - utter_introducao
-  - utter_moeda_adicionada
-  - action_check_currency
+- action_adicionar_moeda
+- action_consultar_cotacao
+- action_consultar_termos
+- utter_adicionar_favoritos
+- utter_consultar_termos
+- utter_finalizar
+- utter_introducao
+- utter_moeda_adicionada
