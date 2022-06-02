@@ -9,27 +9,31 @@ intents:
 - negar
 - perguntar_significado
 entities:
-- moeda
-- moedas
-- termo_tecnico
+  - moedas
+  - termo_tecnico
+
 slots:
   criptomoeda_nome:
     type: text
     mappings:
-    - type: from_text
+      - type: from_entity
+        entity: moedas
+        intent: adicionar_favoritos
+      #- action: action_check_currency
 responses:
   utter_introducao:
   - text: Olá, sou o Criptobot, estou aqui para te ajudar com o universo das criptomoedas, se você quiser, posso favoritar seus criptos, mostrar a cotação de suas moedas favoritas e te ajudar com termos do mercado cripto que você ainda não conhece. O que deseja fazer?
   utter_adicionar_favoritos:
   - text: Digite uma moeda que você deseja favoritar
-  utter_consultar_cotacao:
-  - text: A cotação de sua moedas
   utter_moeda_adicionada:
   - text: Adicionamos {criptomoeda_nome} aos seus favoritos, deseja favoritar outra?
   utter_finalizar:
   - text: Muito bem, qualquer coisa é só me dizer.
+  utter_consultar_cotacao:
+  - text: A cotação de suas moedas são as seguintes, \n Bitcoin R$144.285, \n Ethereum R$9.521. 
   utter_consultar_termos:
   - text: Digite o termo que deseja pesquisar
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
