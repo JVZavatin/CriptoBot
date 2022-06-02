@@ -3,6 +3,7 @@ intents:
 - adicionar_favoritos
 - afirmar
 - consultar_cotacao
+- consultar_termos
 - criptomoeda
 - introducao
 - negar
@@ -27,11 +28,17 @@ responses:
   - text: Adicionamos {criptomoeda_nome} aos seus favoritos, deseja favoritar outra?
   utter_finalizar:
   - text: Muito bem, qualquer coisa é só me dizer.
+  utter_consultar_termos:
+  - text: Digite o termo que deseja pesquisar
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
+- action_adicionar_moeda
+- action_consultar_cotacao
+- action_consultar_termos
 - utter_adicionar_favoritos
+- utter_consultar_termos
 - utter_finalizar
 - utter_introducao
 - utter_moeda_adicionada

@@ -2,12 +2,56 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: interactive_story_1
   steps:
   - intent: introducao
+  - slot_was_set:
+    - criptomoeda_nome: ola
   - action: utter_introducao
+  - intent: criptomoeda
+  - slot_was_set:
+    - criptomoeda_nome: BTC
+  - action: action_adicionar_moeda
+  - intent: afirmar
+  - slot_was_set:
+    - criptomoeda_nome: sim
+  - action: utter_adicionar_favoritos
+  - intent: criptomoeda
+  - slot_was_set:
+    - criptomoeda_nome: ETH
+  - action: action_adicionar_moeda
+  - intent: negar
+  - slot_was_set:
+    - criptomoeda_nome: não
+  - action: utter_finalizar
 
-- story: interactive_story_1
+- story: interactive_story_2
+  steps:
+  - intent: introducao
+  - slot_was_set:
+    - criptomoeda_nome: ola
+  - action: utter_introducao
+  - intent: criptomoeda
+  - slot_was_set:
+    - criptomoeda_nome: BTC
+  - action: action_adicionar_moeda
+  - intent: negar
+  - slot_was_set:
+    - criptomoeda_nome: não
+  - action: utter_finalizar
+
+- story: interactive_story_3
+  steps:
+  - intent: introducao
+  - slot_was_set:
+    - criptomoeda_nome: ola
+  - action: utter_introducao
+  - intent: consultar_cotacao
+  - slot_was_set:
+    - criptomoeda_nome: ver cotação
+  - action: action_consultar_cotacao
+
+- story: interactive_story_4
   steps:
   - intent: introducao
   - slot_was_set:
@@ -15,13 +59,40 @@ stories:
   - action: utter_introducao
   - intent: adicionar_favoritos
   - slot_was_set:
-    - criptomoeda_nome: adicionar moeda
+    - criptomoeda_nome: favoritar
   - action: utter_adicionar_favoritos
   - intent: criptomoeda
   - slot_was_set:
-    - criptomoeda_nome: bitcoin
-  - action: utter_moeda_adicionada
+    - criptomoeda_nome: ADA
+  - action: action_adicionar_moeda
   - intent: negar
   - slot_was_set:
     - criptomoeda_nome: não
   - action: utter_finalizar
+  - intent: consultar_cotacao
+  - slot_was_set:
+    - criptomoeda_nome: ver cotação
+  - action: action_consultar_cotacao
+
+- story: interactive_story_5
+  steps:
+  - intent: introducao
+  - slot_was_set:
+    - criptomoeda_nome: ola
+  - action: utter_introducao
+  - intent: consultar_termos
+  - slot_was_set:
+    - criptomoeda_nome: ver termos
+  - action: utter_consultar_termos
+  - intent: perguntar_significado
+  - slot_was_set:
+    - criptomoeda_nome: nft
+  - action: action_consultar_termos
+  - intent: consultar_termos
+  - slot_was_set:
+    - criptomoeda_nome: ver termo
+  - action: utter_consultar_termos
+  - intent: perguntar_significado
+  - slot_was_set:
+    - criptomoeda_nome: bid
+  - action: action_consultar_termos

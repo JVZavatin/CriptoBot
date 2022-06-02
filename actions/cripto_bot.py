@@ -1,6 +1,7 @@
 import requests
 import json
 
+moedas_favoritas = []
 # Obtem os dados da moeda na corretora
 # Parâmetros: currency - string
 # Retorno: string
@@ -20,12 +21,11 @@ def check_currency(currency):
     return True if data_currency else False
 
 # Obtem o preço do array de moedas
-# Parâmetros: arr_favorite_coins - array
 # Retorno: array
-def consult_price(arr_favorite_coins):
+def consult_price():
     arr_prices = []
 
-    for currency in arr_favorite_coins:
+    for currency in moedas_favoritas:
         data_currency = request_currency(currency)
         if data_currency:
             json_data_currency = json.loads(data_currency.text)
@@ -35,4 +35,9 @@ def consult_price(arr_favorite_coins):
 
     return arr_prices
 
-print(consult_price(['BTC', 'ETH', 'ADA', 'USDT']))
+def add_favorites(currency):
+    if check_currency(currency):
+        moedas_favoritas.append(currency)
+        return "Adicionamos " + currency + " aos seus favoritos, deseja favoritar outra?"
+
+    return "Moeda não encontrada"
