@@ -106,12 +106,99 @@ nlu:
 - intent: perguntar_significado
   examples: |
     - o que significa [trade] (termo_tecnico)
+    - o que significa [ath] (termo_tecnico)
+    - o que significa [bid] (termo_tecnico)
+    - o que significa [trade] (termo_tecnico)
     - o que é [ATH] (termo_tecnico)
     - quero saber o que significa [Baleia] (termo_tecnico)
     - o significado de [Bid] (termo_tecnico)
     - não entendi [Blockchain] (termo_tecnico)
     - me diga o que é [Day Trader] (termo_tecnico)
+    - quero saber o que é
+    - vc sabe o que é
+    - defina 
     - nft
+    - addy
+    - altcoin
+    - ath
+    - ativos
+    - atm
+    - baleia
+    - bear
+    - bearish
+    - bid
+    - block explorer
+    - blockchain
+    - bloco genesis
+    - bull
+    - bullish
+    - candlestick
+    - carteira
+    - cold storage
+    - criptografia
+    - criptomoeda
+    - custódia
+    - cypherpunk
+    - day trader
+    - ddos
+    - dump
+    - dust transaction
+    - escrow
+    - ethereum
+    - exchange
+    - faucet
+    - fiat
+    - fomo
+    - fork
+    - halving
+    - hash
+    - hash rate
+    - hodl
+    - hot wallet
+    - ico
+    - input
+    - lastro
+    - ledger
+    - liquidez
+    - maleabilidade
+    - maker
+    - marketcap
+    - mineração
+    - mixer
+    - output
+    - p2p
+    - paper wallet
+    - pool
+    - pow
+    - profit
+    - pump
+    - roi
+    - satoshi
+    - satoshi nakamoto
+    - scamcoin
+    - sha-256
+    - shitcoin
+    - spread
+    - swingtrader
+    - taker
+    - testnet
+    - ticker
+    - token
+    - trade
+    - txid
+    - volatilidade
+    - wallet
+    - withdrawal
+    - xbt
+    - cbdc
+    - coinjoin
+    - criptoativo
+    - fees
+    - mempool
+    - taproot
+    - stablecoin
+    - trezor
+    - whitepaper
 - intent: consultar_termos
   examples: |
     - ver termos
@@ -143,29 +230,21 @@ nlu:
     - negativo
     - negado
     - nop
-- intent: criptomoeda
-  examples: |
-    - bitcoin
-    - cardano
-    - litecoin
-    - ripple
-    - luaswap
-    - dogecoin
-    - ethereum
-    - BTC
-    - ETH
-    - ADA
-- lookup: moedas
-  examples: |
-    - bitcoin
-    - ethereum
-    - dogecoin
-    - luaswap
-    - ripple
-    - litecoin
-    - cardano
-    - binance
-    - smooth love potion
+# - intent: criptomoeda
+#   examples: |
+#     - bitcoin
+#     - cardano
+#     - litecoin
+#     - ripple
+#     - luaswap
+#     - dogecoin
+#     - ethereum
+#     - BTC
+#     - ETH
+#     - ADA
+#     - SOL
+#     - DOGE
+#     - XRP;
 - synonym: moedas
   examples: |
     - criptos
@@ -221,3 +300,14 @@ nlu:
 - synonym: smooth love potion
   examples: |
     - slp
+- lookup: moedas
+  examples: |
+    - bitcoin
+    - ethereum
+    - dogecoin
+    - luaswap
+    - ripple
+    - litecoin
+    - cardano
+    - binance
+    - smooth love potion

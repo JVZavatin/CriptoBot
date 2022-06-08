@@ -96,3 +96,77 @@ stories:
   - slot_was_set:
     - criptomoeda_nome: bid
   - action: action_consultar_termos
+
+- story: interactive_story_6
+  steps:
+  - intent: introducao
+#  - slot_was_set:
+#    - criptomoeda_nome: ola
+  - action: utter_introducao
+  - intent: adicionar_favoritos
+#  - slot_was_set:
+#    - criptomoeda_nome: None
+  - action: utter_adicionar_favoritos
+  - intent: criptomoeda
+  - slot_was_set:
+    - criptomoeda_nome: ADA
+  - action: action_adicionar_moeda
+
+- story: quer adicionar nova moeda nos favoritos
+  steps:
+  - intent: negar
+  - 
+  # - intent: afirmar
+  # - slot_was_set:
+  #   - criptomoeda_nome: sim
+  # - action: utter_adicionar_favoritos
+  # - intent: criptomoeda
+  # - slot_was_set:
+  #   - criptomoeda_nome: BTC
+  # - action: action_adicionar_moeda
+  # - intent: afirmar
+  # - slot_was_set:
+  #   - criptomoeda_nome: sim
+  # - action: utter_adicionar_favoritos
+  # - intent: criptomoeda
+  # - slot_was_set:
+  #   - criptomoeda_nome: ETH
+  # - action: action_adicionar_moeda
+  # - intent: negar
+  # - slot_was_set:
+  #   - criptomoeda_nome: não
+  # - action: utter_finalizar
+  # - intent: consultar_cotacao
+  # - slot_was_set:
+  #   - criptomoeda_nome: consultar cotação
+  # - action: action_consultar_cotacao
+  # - intent: consultar_termos
+  # - slot_was_set:
+  #   - criptomoeda_nome: ver termo
+  # - action: utter_consultar_termos
+  # - intent: perguntar_significado
+  # - slot_was_set:
+  #   - criptomoeda_nome: nft
+  # - action: action_consultar_termos
+
+#- story: define com moeda de termo
+#  steps:
+#  - intent: perguntar_significado
+#  - slot_was_set:
+#    - termo: bitcoin
+#  - slot_was_set:
+#    - criptomoeda_nome: bitcoin
+  #- action: utter_consultar_termos
+  #- intent: perguntar_significado
+  #- slot_was_set:
+  #  - criptomoeda_nome: lastro
+#  - action: action_consultar_termos
+
+#- story: define, não menciona o termo
+#  steps:
+#  - intent: perguntar_significado
+#  - action: utter_consultar_termos
+  #- intent: perguntar_significado
+  #- slot_was_set:
+  #  - criptomoeda_nome: lastro
+#  - action: action_consultar_termos

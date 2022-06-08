@@ -16,7 +16,18 @@ slots:
   criptomoeda_nome:
     type: text
     mappings:
-    - type: from_text
+    - type: from_entity
+    - entity: moeda
+  termo:
+    type: text
+    mappings:
+    - type: from_entity
+    - entity: termo_tecnico
+forms:
+  termo_form:
+    required_slots:
+        - termo
+
 responses:
   utter_introducao:
   - text: Olá, sou o Criptobot, estou aqui para te ajudar com o universo das criptomoedas, se você quiser, posso favoritar seus criptos, mostrar a cotação de suas moedas favoritas e te ajudar com termos do mercado cripto que você ainda não conhece. O que deseja fazer?
@@ -28,7 +39,7 @@ responses:
   - text: Adicionamos {criptomoeda_nome} aos seus favoritos, deseja favoritar outra?
   utter_finalizar:
   - text: Muito bem, qualquer coisa é só me dizer.
-  utter_consultar_termos:
+  utter_ask_termo:
   - text: Digite o termo que deseja pesquisar
 session_config:
   session_expiration_time: 60
