@@ -7,6 +7,7 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
+from asyncio.windows_events import NULL
 from typing import Any, Text, Dict, List
 
 import cripto_bot
@@ -57,7 +58,8 @@ class ActionConsultarTermos(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        slot_value = tracker.get_slot('criptomoeda_nome')
+        slot_value = tracker.get_slot('termo')
+        print(slot_value)
         dispatcher.utter_message(text=f"{crypto_terms.get_term(slot_value)}")
 
-        return []
+        return {"termo": None, "criptomoeda_nome": None}

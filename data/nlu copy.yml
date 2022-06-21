@@ -1,29 +1,19 @@
 version: "3.1"
-
 nlu:
 - intent: adicionar_favoritos
   examples: |
-    - eu desejo favoritar [BTC](moedas)
-    - eu desejo favoritar [ADA](moedas)
-    - eu desejo favoritar [ETH](moedas)
-    - eu desejo favoritar [AVAX](moedas)
-    - eu desejo favoritar [GALA](moedas)
+    - eu desejo favoritar [cripto moedas] (moedas)
     - quero favoritar
+    - desejo adicionar minhas preferidas
+    - eu desejo favoritar um [cripto-moeda] (moedas)
     - preciso adicionar aos favoritos
     - eu quero adicionar moedas aos meus favoritos
-    - quero favoritar minhas moedas
-    - quero adicionar [ICP](moedas) aos favoritos
-    - quero adicionar [IMX](moedas) aos favoritos
-    - quero adicionar [KNC](moedas) aos favoritos
-    - quero adicionar [LINK](moedas) aos favoritos
-    - quero adicionar [MIR](moedas) aos favoritos
-    - quero seguir [OXT] (moedas)
-    - quero seguir [PERP] (moedas)
-    - quero seguir [PLA] (moedas)
-    - quero seguir [QNT] (moedas)
-    - quero seguir [RAD] (moedas)
+    - seguir umas [cripto ativos] (moedas)
+    - quero favoritar minhas [criptomoedas] (moedas)
+    - quero adicionar aos favoritos
+    - quero seguir [cripto ativo] (moedas)
     - quero seguir minhas moedas preferidas
-    - desejo favoritar minhas criptos preferidas
+    - desejo favoritar minhas [criptos] preferidas (moedas)
     - poderia adicionar as moedas
     - gostaria de seguir
     - desejo favoritar algumas moedas
@@ -33,50 +23,51 @@ nlu:
     - favoritar
 - intent: consultar_cotacao
   examples: |
-    - ver favoritos
+    - favoritos
+    - [ativos] salvos (moedas)
     - cotação
     - cotações
     - preços
     - quero o valor da moeda favorita
     - valores
     - eu quero ver favoritos
-    - ver ativos salvos
-    - ver cotação dos ativos
+    - ver [ativos] salvos (moedas)
+    - ver cotação dos [ativos] (moedas)
     - ver cotações
-    - queria ver preços de criptomoedas
+    - queria ver preços de [criptomoedas] (moedas)
     - eu queria ver meus favoritos
-    - eu desejo ver meus ativos salvos
-    - eu quero ver meus ativos moedas
+    - eu desejo ver meus [ativos] salvos (moedas)
+    - eu quero ver meus [ativos] (moedas)
     - eu quero ver minha cotação de moedas
     - quero ver minhas cotações
     - quero ver meus preços
     - consultar favoritos
     - consultar os favoritos
     - consultar as moedas favoritas
-    - consultar ativos salvos
+    - consultar [ativos] salvos (moedas)
     - consultar cotação
-    - consultar a cotação das minhas cripto moedas
+    - consultar a cotação das minhas [cripto moedas] (moedas)
     - consultar cotações
-    - consultar preços das criptos
+    - consultar preços das [criptos] (moedas)
     - consultar os preços
     - consultar meus favoritos
-    - consultar meus ativos salvos
+    - consultar meus [ativos] salvos (moedas)
     - consultar minhas cotações
     - consultar meus preços
     - mostrar favoritos
     - mostrar os favoritos
-    - mostrar ativos salvos
+    - mostrar [ativos] salvos (moedas)
     - mostrar cotação das moedas
     - mostrar cotações
     - mostrar as cotações
-    - mostrar preços das minhas cripto-moedas
+    - mostrar preços das minhas [cripto-moedas] (moedas)
     - mostrar meus favoritos
-    - mostrar meus ativos salvos
+    - mostrar meus [ativos] salvos (moedas)
     - mostrar meus cotação
     - mostrar meus cotações
     - mostrar meus preços
     - obter favoritos
-    - obter ativos salvos
+    - obter [ativos] salvos (moedas)
     - obter cotação das minhas preferidas
     - obter cotações
     - obter a cotação
@@ -84,8 +75,10 @@ nlu:
     - eu quero obter preços das minhas moedas
     - eu queria obter meus preços
     - obter meus favoritos
-    - obter meus ativos salvos
+    - obter meus [ativos] salvos (moedas)
     - obter minhas cotações
+    - obter meus preços
+    - qual o valor delas hoje
     - qual o valor das minhas moedas favoritas
     - qual o valor das minhas moedas favoritadas
     - eu gostaria de ver as moedas que eu favoritei
@@ -115,36 +108,15 @@ nlu:
     - o que significa [trade] (termo_tecnico)
     - o que significa [ath] (termo_tecnico)
     - o que significa [bid] (termo_tecnico)
-    - o que significa [addy] (termo_tecnico)
-    - o que é [bull] (termo_tecnico)
-    - o que é [bullish] (termo_tecnico)
-    - o que é [candlestick] (termo_tecnico)
-    - o que é [carteira] (termo_tecnico)
-    - o que é [criptomoeda] (termo_tecnico)
-    - quero saber o que significa [baleia] (termo_tecnico)
-    - quero saber o que significa [dump] (termo_tecnico)
-    - quero saber o que significa [escrow] (termo_tecnico)
-    - quero saber o que significa [exchange] (termo_tecnico)
-    - quero saber o que significa [fiat] (termo_tecnico)
-    - quero saber o que significa [fomo] (termo_tecnico)
-    - quero saber o que significa [fork] (termo_tecnico)
-    - o significado de [hash] (termo_tecnico)
-    - o significado de [ico] (termo_tecnico)
-    - o significado de [input] (termo_tecnico)
-    - o significado de [lastro] (termo_tecnico)
-    - o significado de [ledger] (termo_tecnico)
-    - o significado de [liquidez] (termo_tecnico)
-    - o significado de [maker] (termo_tecnico)
-    - me diga o que é [p2p] (termo_tecnico)
-    - me diga o que é [poll] (termo_tecnico)
-    - me diga o que é [profit] (termo_tecnico)
-    - me diga o que é [roi] (termo_tecnico)
-    - me diga o que é [satoshi] (termo_tecnico)
-    - me diga o que é [xbt] (termo_tecnico)
-    - me diga o que é [nft] (termo_tecnico)
-    - me diga o que é [trezor] (termo_tecnico)
+    - o que significa [trade] (termo_tecnico)
+    - o que é [ATH] (termo_tecnico)
+    - quero saber o que significa [Baleia] (termo_tecnico)
+    - o significado de [Bid] (termo_tecnico)
+    - não entendi [Blockchain] (termo_tecnico)
+    - me diga o que é [Day Trader] (termo_tecnico)
     - quero saber o que é
     - vc sabe o que é
+    - defina
     - ver termos
     - ver significado
     - termos tecnicos
@@ -165,10 +137,6 @@ nlu:
     - prá já
     - aham
     - yep
-    - isso mesmo
-    - quero sim
-    - afirmativo
-    - tenho interesse 
 - intent: negar
   examples: |
     - não
@@ -178,9 +146,61 @@ nlu:
     - negativo
     - negado
     - nop
-    - não quero
-    - não interessa
-    - não mesmo
+- synonym: moedas
+  examples: |
+    - criptos
+    - cripto ativos
+    - criptomoedas
+    - cripto moedas
+    - cripto-moedas
+    - criptocoins
+    - cripto-coins
+    - cripto coins
+    - cripto
+    - cripto ativo
+    - criptomoeda
+    - cripto moeda
+    - cripto-moeda
+    - criptocoin
+    - cripto-coin
+    - cripto coin
+- synonym: bitcoin
+  examples: |
+    - bit coin
+    - btc
+    - xbt
+- synonym: ethereum
+  examples: |
+    - Ethers
+    - etherium
+    - eth
+    - Ether
+- synonym: dogecoin
+  examples: |
+    - doge coin
+    - doge
+    - doges
+    - dogecoins
+- synonym: luaswap
+  examples: |
+    - lua
+    - luacoin
+- synonym: ripple
+  examples: |
+    - xrp
+- synonym: litecoin
+  examples: |
+    - ltc
+- synonym: cardano
+  examples: |
+    - ada
+    - carda
+- synonym: binance
+  examples: |
+    - bnb
+- synonym: smooth love potion
+  examples: |
+    - slp
 - lookup: moedas
   examples: |
     - AAVE

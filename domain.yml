@@ -17,16 +17,16 @@ slots:
     type: text
     mappings:
     - type: from_entity
-    - entity: moedas
+      entity: moedas
   termo:
     type: text
     mappings:
     - type: from_entity
-    - entity: termo_tecnico
+      entity: termo_tecnico
 forms:
   termo_form:
     required_slots:
-        - termo
+      - termo
 
 responses:
   utter_introducao:
@@ -48,7 +48,6 @@ actions:
 - action_consultar_cotacao
 - action_consultar_termos
 - utter_adicionar_favoritos
-- utter_consultar_termos
 - utter_finalizar
 - utter_introducao
 - utter_moeda_adicionada
